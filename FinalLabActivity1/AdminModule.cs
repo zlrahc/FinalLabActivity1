@@ -10,16 +10,24 @@ using System.Windows.Forms;
 
 namespace FinalLabActivity1
 {
-    public partial class Form1 : Form
+    public partial class AdminModule : Form
     {
-        public Form1()
+        public AdminModule()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void AdminModule_Load(object sender, EventArgs e)
         {
 
         }
+        private string _userId;
+
+        public AdminModule(string userId) 
+        {
+            InitializeComponent();
+            _userId = userId; 
+        }
+
     }
 }
